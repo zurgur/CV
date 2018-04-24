@@ -1,0 +1,27 @@
+.currentAct{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+.Actnames{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+
+}
+.date{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
+info{
+    margin: 0%;
+}
+.title{
+    margin: 0%;
+}
+hr.style3 {
+	border-top: 1px dashed #8c8b8b;
+}
