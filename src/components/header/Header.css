@@ -3,7 +3,22 @@
     padding: 20px;
     color: black;
     font-size: 40px;
-  }
-  .meImg{
-    border-radius: 50%;
-  }
+}
+.meImg{
+  border-radius: 50%;
+}
+.profileLinks{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+.ln{
+  margin: 1%;
+}
+.git{
+  margin: 1%;
+}
+.headImg{
+  max-width: 50px;
+}

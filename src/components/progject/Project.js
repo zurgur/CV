@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './Project.css';
 
 
-export default class Jobs extends Component{
+export default class Project extends Component{
 
     render(){
         
