@@ -22,3 +22,11 @@
 .headImg{
   max-width: 50px;
 }
+.infoTex{
+  font-size: 15px;
+  width: 100%;
+  margin: 0%;
+}
+.infoP{
+  height: 10px;
+}
