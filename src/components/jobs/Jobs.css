@@ -1,7 +1,10 @@
 .department{
     color:  #ff8000 ;
     font-size: 40px;
-  }
-  .jobs{
+   
   }
   
+.jobs{
+  padding-right: 200px;
+  padding-left: 200px;
+}
