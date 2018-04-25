@@ -13,7 +13,7 @@ export default class Schools extends Component{
             info: 'Tölvunar fræði'},
         ];
         return(
-            <div>
+            <div className='skolar'>
                 <h1 className='department'>Menntun</h1>
                 <Activity info={a} />
             </div>

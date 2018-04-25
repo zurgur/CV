@@ -17,7 +17,7 @@ export default class Jobs extends Component{
             info: 'vann sem vélar maður'}
         ];
         return(
-            <div>
+            <div className='jobs'>
                 <h1 className='department' >Vinna</h1>
                 <Activity info={a} />
             </div>
