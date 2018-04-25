@@ -26,9 +26,9 @@ export default class Projects extends Component{
 
         return(
             <div className='progects'>
-            <h1>Projects</h1>
+            <h1>verkefni</h1>
                 {pros.map((pro) =>(
-                    <div key={pro.tittle}>
+                    <div key={pro.tittle} className='pro'>
                     <a href={pro.git} className='git' ><img src='GitHub-Mark-120px-plus.png' className='headImg' alt='github'/></a>
                     <h3>{pro.tittle}</h3>
                     <p>{pro.text}</p>

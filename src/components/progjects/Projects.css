@@ -1,0 +1,13 @@
+.progects{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pro{
+    max-width: 1000px;
+}
+h1{
+    color:  #ff8000 ;
+    font-size: 40px;
+}
