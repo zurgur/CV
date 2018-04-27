@@ -1,0 +1,32 @@
+.Cards{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    text-decoration: none;
+
+}
+.card{
+    margin: auto;
+    box-shadow: 0 8px 16px 0 rgb(255, 3, 3);
+}
+.card:hover{
+    box-shadow: 0 16px 32px 0 rgb(21, 247, 0);
+}
+.cardImg{
+    height: 300px;
+}
+.cardImg--empty{
+    width: 250px;
+}
+.cardImg--empty:hover{
+    width: 250px;
+}
+
+.cardName{
+    text-decoration: none;
+    color: black;
+}
+.cardTittle{
+    color: black;
+    text-decoration: none;
+}

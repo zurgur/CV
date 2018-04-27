@@ -7,21 +7,18 @@ export default class Endorsment extends Component{
 
     render(){
         const a = [
-            {name: "Ebba Þóra Hvannberg, Ph.D.",
-            tittle: 'Prófesor í tölvunarfræði',
-            image: 'ebba.jpg',
-            email: '',
-            page: 'https://www.hi.is/staff/ebba'},
             {name: "Steinn Guðmundsson",
             tittle: 'Prófesor í tölvunarfræði',
-            image: 'steinn.jpg',
             email: '',
             page: 'https://www.hi.is/staff/steinng'},
+            {name: "Ebba Þóra Hvannberg, Ph.D.",
+            tittle: 'Prófesor í tölvunarfræði',
+            email: '',
+            page: 'https://www.hi.is/staff/ebba'},
             {name: "Kári Aðalsteinsson",
             tittle: 'Garðyrkjustjóri KGRP,',
-            image: 'kari.jpg',
             email: 'Tölvunar fræði',
-            page: ''},
+            page: 'http://www.kirkjugardar.is/sida.php?id=165&width=1920&height=1080'},
         ];
         return(
             <div className='endorsment'>
