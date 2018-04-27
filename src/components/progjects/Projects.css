@@ -14,8 +14,15 @@ h1{
 .images{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .image{
+    display: block;
+    max-width: 700px;
+    max-height: 400px;
+    min-height: 250px;
+    width: auto;
+    height: auto;
     transition: transform .4s; /* Animation */
 }
 .image:hover{

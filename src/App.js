@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Helmet} from "react-helmet";
 import './App.css';
 
 import Header from './components/header';
@@ -13,6 +14,10 @@ class App extends Component {
   render() {
     return (
       <main className="App">
+        <Helmet>
+          <title>Alexander</title>
+          <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+        </Helmet>
         <Header />
         <About />
         <School />
