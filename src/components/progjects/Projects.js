@@ -37,7 +37,7 @@ export default class Projects extends Component{
                     <h3>{pro.tittle}</h3>
                     <p>{pro.text}</p>
                     <div className='images'>
-                    {pro.img ? pro.img.map((image) => (<img src={image}/>)) : <p></p>}
+                    {pro.img ? pro.img.map((image) => (<img className='image'  src={image}/>)) : <p></p>}
                     </div>
                     </div>
                 ))}

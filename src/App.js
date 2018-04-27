@@ -7,6 +7,7 @@ import School from './components/schools';
 import Projects from './components/progjects';
 import About from './components/about';
 import Endorsment from './components/endorsment';
+import Footer from './components/footer'
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <Jobs />
         <Projects />
         <Endorsment />
+        <Footer />
       </main>
     );
   }
