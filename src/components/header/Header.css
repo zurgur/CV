@@ -29,3 +29,18 @@
 .infoP{
   height: 10px;
 }
+
+.headImg {
+  height: 5rem;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  -moz-perspective: 150rem;
+  -webkit-transition: all .7s;
+  -o-transition: all .7s;
+  transition: all .7s;
+}
+
+.headImg:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
