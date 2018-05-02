@@ -2,6 +2,10 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    align-self: center;
     flex-direction: column;
 }
 
@@ -40,7 +44,6 @@ img.image {
     width: 50px;
     height: 50px;
     display: inline-block;
-    
     margin: 25px 0 25px 25px;
     border-radius: 5px;
     color: #fff;
@@ -51,29 +54,8 @@ img.image {
     font-family: sans-serif;
   }
   
-  .shiny {
-    margin: 30px auto;
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 640px;
-    height: 400px;
-    padding: 15px;
-    overflow:hidden;
-  }
+ .texti{
+     max-width: 800px;
   
-  .show-off {
-    width: 405px;
-    height: 605px;
-    position: relative;
-    top: -556px;
-    left: -550px;
-    transition: 1s;
-    transform: rotate(30deg);
-    background: linear-gradient(90deg, rgba(255,255,255, 0)50%, rgba(255,255,255,0.7)100%);
-  }
-  
-  .shiny:hover .show-off {
-    transform: rotate(0);
-    left: 560px;
-    top: -445px;
-  }
+    margin: auto;
+ }
