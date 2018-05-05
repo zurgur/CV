@@ -2,8 +2,8 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-   "homepage": "http://zurgur.com/",
-   "dependencies": {
+  "homepage": "http://zurgur.com/",
+  "dependencies": {
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-helmet": "^5.2.0",
@@ -11,8 +11,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d bouild",
-    "start": "react-scripts start",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
