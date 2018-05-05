@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-   "homepage": "https://zurgur.github.io/CV/",
+   "homepage": "http://zurgur.com/",
    "dependencies": {
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
