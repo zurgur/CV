@@ -10,7 +10,6 @@ export default class Activity extends Component{
     }
     render() {
         const about = this.props.info;
-        console.info(about);
         return (
             <div className='about'>
                 {about.map((thing) => (
