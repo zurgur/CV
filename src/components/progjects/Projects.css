@@ -59,3 +59,10 @@ img.image {
   
     margin: auto;
  }
+ img.headImg {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
