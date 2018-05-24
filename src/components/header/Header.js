@@ -9,7 +9,6 @@ export default class Header extends Component {
         return (
             <header className="App-header">
                 <h1 className="App-title">Alexander Freyr Sveinsson</h1>
-                <img className='meImg' src='me.jpg' alt='me' />
                 <div className='infoTex'>
                     <p className='infoP'>Stakhamrar 19</p>
                     <p className='infoP'>Reykjavík, 112 Rvk</p>
