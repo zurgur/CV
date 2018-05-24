@@ -1,7 +1,14 @@
 .App-header {
-    height: inherit;
-    color: black;
-    font-size: 40px;
+    padding: 0;
+    display: flex;
+    height: 500px;
+    width: 100%;
+    font-size: 30px;
+    background-image: url("/header.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    background-size: cover;
 }
 .meImg{
   border-radius: 50%;
@@ -43,4 +50,27 @@
 .headImg:hover {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+h1.App-title {
+  margin: auto;
+}
+
+div.infoAndLinks {
+  margin: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+div.infoTex {
+  height: 100px;
+}
+
+div.profileLinks {
+  margin-bottom: 1px;
+}
+
+div.infoTex {
+  height: auto;
+  color: #ffffff;
 }

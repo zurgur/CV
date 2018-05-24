@@ -6,7 +6,6 @@ import Header from './components/header';
 import Jobs from './components/jobs';
 import School from './components/schools';
 import Projects from './components/progjects';
-import About from './components/about';
 import Endorsment from './components/endorsment';
 import Footer from './components/footer'
 
@@ -19,7 +18,6 @@ class App extends Component {
           <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
         </Helmet>
         <Header />
-        <About />
         <School />
         <Jobs />
         <Projects />
