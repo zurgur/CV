@@ -56,7 +56,32 @@ class App extends Component {
     git:'https://github.com/zurgur/Paint-netbeans',
     img: ['paint.png'],
     text: 'a project in interface programming done in Java Swing. The program was an individual project during the first year of computer science, but it received a good reception and I learned a lot from it. This is a simple application to draw images and save them to your hard drive'},
-  ]
+  ],
+  schoolIs : [
+    {tittle: "Háskóli Íslands",
+            date: '2016 - 2018',
+            info: 'Tölvunar fræði'},
+  ],
+  schoolEn : [
+    {tittle: "University of Iceland",
+            date: '2016 - 2018',
+            info: 'Computer science'},
+  ],
+  jobsIs : [
+    {tittle: "Dæmatíma kennari",
+    date: '2018',
+    info: 'kenndi stærðfræði og reiknifræði'},
+    {tittle: "Vélarmaður / Sumarstarfstaður",
+    date: '2011 - 2017',
+    info: 'vann sem vélar maður'}
+  ],
+  jobsEn : [{tittle: "Assistant teacher",
+  date: '2018',
+  info: 'Assistant teacher in Mathematics and calculus'},
+  {tittle: "Machine operator",
+  date: '2011 - 2017',
+  info: 'During 3 months each summer'}
+],
   }
 
   switchLang = () => {
@@ -75,8 +100,10 @@ class App extends Component {
           <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
         </Helmet>
         <Header switchLan={this.switchLang()} lan={this.state.lang}/>
-        <School name={this.state.lang === 'is' ? 'Menntun' : 'Education'}/>
-        <Jobs name = {this.state.lang === 'is' ? 'Vinna' : 'Work'}/>
+        <School name={this.state.lang === 'is' ? 'Menntun' : 'Education'}
+          info={this.state.lang === 'is' ? this.state.schoolIs : this.state.schoolEn} />
+        <Jobs name = {this.state.lang === 'is' ? 'Vinna' : 'Work'}
+          info={this.state.lang === 'is' ? this.state.jobsIs : this.state.jobsEn}/>
         <Projects pros={this.state.lang === 'is' ? this.state.prosIS : this.state.prosEN}
             name={this.state.lang === 'is' ? 'Verkefni' : 'Projects'}/>
         <Endorsment name = {this.state.lang === 'is' ? 'Meðmælendur' : 'Referrals'}/>
