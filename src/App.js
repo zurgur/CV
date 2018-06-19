@@ -59,10 +59,14 @@ class App extends Component {
   ]
   }
 
-  switchLang: function () {
-    this.state.lang ? 'is' : 'en' : 'is';
+  switchLang = () => {
+    return (e) => {
+      const newLang = this.state.lang === 'is' ? 'en' : 'is';
+      console.info(newLang);
+      this.setState({lang : newLang});
+    }
   }
-
+  
   render() {
     return (
       <main className="App">
@@ -70,12 +74,13 @@ class App extends Component {
           <title>Alexander</title>
           <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
         </Helmet>
-        <Header />
-        <School />
-        <Jobs />
-        <Projects pros={this.state.prosIS}/>
-        <Endorsment />
-        <Footer />
+        <Header switchLan={this.switchLang()} lan={this.state.lang}/>
+        <School name={this.state.lang === 'is' ? 'Menntun' : 'Education'}/>
+        <Jobs name = {this.state.lang === 'is' ? 'Vinna' : 'Work'}/>
+        <Projects pros={this.state.lang === 'is' ? this.state.prosIS : this.state.prosEN}
+            name={this.state.lang === 'is' ? 'Verkefni' : 'Projects'}/>
+        <Endorsment name = {this.state.lang === 'is' ? 'Meðmælendur' : 'Referrals'}/>
+        <Footer name={this.state.lang === 'is' ? 'Hafðu samband': 'Be in touch'}/>
       </main>
     );
   }

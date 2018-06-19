@@ -78,3 +78,8 @@ div.infoTex {
 img.headImg {
   margin-top: 10px !important;
 }
+
+.langButton{
+  max-width: 50px;
+  max-height: 50px;
+}

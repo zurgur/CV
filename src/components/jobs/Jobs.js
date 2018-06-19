@@ -18,7 +18,7 @@ export default class Jobs extends Component{
         ];
         return(
             <div className='jobs'>
-                <h1 className='department'>Vinna</h1>
+                <h1 className='department'>{this.props.name}</h1>
                 <Activity info={a} />
             </div>
         );

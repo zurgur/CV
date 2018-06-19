@@ -14,7 +14,7 @@ export default class Schools extends Component{
         ];
         return(
             <div className='skolar'>
-                <h1 className='department'>Menntun</h1>
+                <h1 className='department'>{this.props.name}</h1>
                 <Activity info={a} />
             </div>
         );

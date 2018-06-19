@@ -22,7 +22,7 @@ export default class Endorsment extends Component{
         ];
         return(
             <div className='endorsment'>
-                <h1 className='department'>Meðmælendur</h1>
+                <h1 className='department'>{this.props.name}</h1>
                 <Cards info={a} />
             </div>
         );
