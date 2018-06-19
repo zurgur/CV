@@ -10,6 +10,59 @@ import Endorsment from './components/endorsment';
 import Footer from './components/footer'
 
 class App extends Component {
+
+  state = {
+
+    lang: 'is',
+
+    prosIS : [
+      {tittle:'Laxness',
+      git:'https://github.com/mimiqkz/Laxness',
+      img: ['laxness1.png','laxness2.png'],
+      text: 'van að þessu verkefni í samtarfi við safnið Gljúfrastein en það er mjög góð reynsla að vinna með kúnna og reyna að koma hugmyndum okkar saman. Forritið verður app sem er gert með Android studio.'},
+      {tittle: 'k-assistant',
+      img: ['kassistant1.png','kassistant2.png','kassistant3.png'],
+      git:'https://github.com/mimiqkz/kassistant',
+      text: 'verkefni fyrir hugbúnaðarðarverkefni 1 var gert með Spring boot og með Postgress gagnagrunni. Hlutverk mitt var aðallega í bakendanum, gera gagnagrunn með AWS og tengja framenda við bakenda.'},
+      {tittle: 'ArenaFighter',
+      img: ['arena1.png','StartScreen.png'],
+      git:'https://github.com/zurgur/ArenaFighter',
+      text: 'lokaverkefni í tölvuleikjaforritun þar sem við fengum að leika lausum hala og gera það sem okkur datt í hug. Leikurinn er 2D bardagaleikur gerður með Javasqript og html og grafíkin er okkar eigin en hægt er að spila hann hér'},
+      {tittle:'7Frapp',
+      git:'https://github.com/zurgur/7Frapp',
+      text: 'verkefni í þróun hugbúnaðar. Forritið er gert með það í huga að geta pantað flug og séð upplýsingar um þau flug sem notandi hefur keypt sér. Gert í JavaFX með SQLite gagnagrunni. Ég vann í að leita að og panta flug.'},
+      {tittle:'Paint-netbeans',
+      git:'https://github.com/zurgur/Paint-netbeans',
+      img: ['paint.png'],
+      text: 'verkefni í viðmótsforritun gert í Java swing. Forritið var einstaklingsverkefni á fyrsta ári tölvunarfræðinnar en það fékk góðar viðtökur og ég lærði mikið af því. Þetta er einfalt forrit til þess að teikna myndir og vista þær á harðadisk tölvunnar'},
+  ],
+  prosEN :  [
+    {tittle:'Laxness',
+    git:'https://github.com/mimiqkz/Laxness',
+    img: ['laxness1.png','laxness2.png'],
+    text: 'worked on this project in collaboration with Gljúfrastein good experience to learn how to work with a customer. The project was originally made in android native but we later decided to port it over to react native.'},
+    {tittle: 'k-assistant',
+    img: ['kassistant1.png','kassistant2.png','kassistant3.png'],
+    git:'https://github.com/mimiqkz/kassistant',
+    text: 'A project made in software engineering class 1 made with Spring boot and with a Postgres database. my main job was to make the back end, make the database with AWS and connect it to the front end.'},
+    {tittle: 'ArenaFighter',
+    img: ['arena1.png','StartScreen.png'],
+    git:'https://github.com/zurgur/ArenaFighter',
+    text: 'project for Computer gaming class where we got to make any game we wanted. the game is a 2D fighter made with Javascript and HTML.'},
+    {tittle:'7Frapp',
+    git:'https://github.com/zurgur/7Frapp',
+    text: 'project in software development. The program is done with the purpose of being expandable to order flights and see information about the flights That the user has Purchased. Done in JavaFX with SQLite database. I worked looking for and ordering flights.'},
+    {tittle:'Paint-netbeans',
+    git:'https://github.com/zurgur/Paint-netbeans',
+    img: ['paint.png'],
+    text: 'a project in interface programming done in Java Swing. The program was an individual project during the first year of computer science, but it received a good reception and I learned a lot from it. This is a simple application to draw images and save them to your hard drive'},
+  ]
+  }
+
+  switchLang: function () {
+    this.state.lang ? 'is' : 'en' : 'is';
+  }
+
   render() {
     return (
       <main className="App">
@@ -20,7 +73,7 @@ class App extends Component {
         <Header />
         <School />
         <Jobs />
-        <Projects />
+        <Projects pros={this.state.prosIS}/>
         <Endorsment />
         <Footer />
       </main>
