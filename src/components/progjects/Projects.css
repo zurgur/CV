@@ -30,6 +30,8 @@ h1{
 }
 .image:hover{
     transform: scale(1.5);
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 img.headImg {
     margin-top: 8px;
