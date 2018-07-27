@@ -71,3 +71,24 @@
     width: 400px;
 }
 
+
+p.cardTittle {
+  height: 50px;
+}
+
+a.box {
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px 1px #888888;
+  line-height: 50px;
+}
+
+p.cardName {
+  background-color: #45daff;
+  color: #000000;
+  border-color: #000000;
+  height: 50px;
+  margin: 0;
+}
+
