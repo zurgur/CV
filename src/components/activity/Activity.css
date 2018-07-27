@@ -1,13 +1,12 @@
 .currentAct{
     display: flex;
-    flex-direction: row;
-    width: auto;
+    flex-direction: column;
 }
 .Actnames{
     display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
+    flex-direction: row;
+    
+    width: 100%;
 
 }
 .date{
@@ -17,11 +16,22 @@
     width: 50%;
 }
 info{
-    margin: 0%;
+    display: flex;
 }
 .title{
-    margin: 0%;
+    margin: auto;
 }
 hr.style3 {
     border-top: 1px dashed #8c8b8b;
 }
+
+div.Actnames p {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: auto !important;
+}
+
+div.titleAndInf {
+    margin: auto !important;
+}
+
