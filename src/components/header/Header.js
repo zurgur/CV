@@ -23,7 +23,7 @@ export default class Header extends Component {
                 <div className='infoTex'>
                     <p className='infoP'>Stakhamrar 19</p>
                     <p className='infoP'>Reykjavík, 112 Rvk</p>
-                    <p className='infoP'>(234) 869-2855</p>
+                    <p className='infoP'>(254) 869-2855</p>
                     <p className='infoP'>alexfreyrs@gmail.com</p>
                 </div>
                 <div className='profileLinks'>
