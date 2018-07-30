@@ -19,7 +19,7 @@ class App extends Component {
       {tittle:'Laxness',
       git:'https://github.com/mimiqkz/Laxness',
       img: ['laxness1.png','laxness2.png'],
-      text: 'van að þessu verkefni í samtarfi við safnið Gljúfrastein en það er mjög góð reynsla að vinna með kúnna og reyna að koma hugmyndum okkar saman. Forritið er app sem uprunarlega var gert í Android native, en seins færðum við það í react native.'},
+      text: 'vann að þessu verkefni í samtarfi við safnið Gljúfrastein en það er mjög góð reynsla að vinna með kúnna og reyna að koma hugmyndum okkar saman. Forritið er app sem uprunarlega var gert í Android native, en seina færðum við það í react native.'},
       {tittle: 'k-assistant',
       img: ['kassistant1.png','kassistant2.png','kassistant3.png'],
       git:'https://github.com/mimiqkz/kassistant',
