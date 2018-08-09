@@ -29,7 +29,7 @@ class App extends Component {
       git:'https://github.com/zurgur/ArenaFighter',
       text: 'Lokaverkefni í tölvuleikjaforritun þar sem við fengum að leika lausum hala og gera það sem okkur datt í hug. Leikurinn er 2D bardagaleikur gerður með JavaScript og html. Grafíkin er okkar eigin'},
       {tittle:'BASH',
-      img: ['7Frapp1.PNG','7Frapp3.PNG',,'7Frapp2.PNG'],
+      img: ['7Frapp1.PNG','7Frapp3.PNG','7Frapp2.PNG'],
       git:'https://github.com/zurgur/7Frapp',
       text: 'Verkefni í þróun hugbúnaðar. Forritið er gert með það í huga að geta pantað flug og séð upplýsingar um þau flug sem notandi hefur keypt sér. Gert í JavaFX með SQLite gagnagrunni. Ég vann í að leita að og panta flug.'},
       {tittle:'Paint-netbeans',
@@ -50,7 +50,8 @@ class App extends Component {
     img: ['arena1.png','StartScreen.png'],
     git:'https://github.com/zurgur/ArenaFighter',
     text: 'Project for Computer gaming class where we got to make any game we wanted. the game is a 2D fighter made with Javascript and HTML.'},
-    {tittle:'7Frapp',
+    {tittle:'BASH',
+    img: ['7Frapp1.PNG','7Frapp3.PNG','7Frapp2.PNG'],
     git:'https://github.com/zurgur/7Frapp',
     text: 'Project in software development. The program is done with the purpose of being expandable to order flights and see information about the flights That the user has Purchased. Done in JavaFX with SQLite database. I worked looking for and ordering flights.'},
     {tittle:'Paint-netbeans',
@@ -103,10 +104,10 @@ class App extends Component {
         <Header switchLan={this.switchLang()} lan={this.state.lang}/>
         <School name={this.state.lang === 'is' ? 'Menntun' : 'Education'}
           info={this.state.lang === 'is' ? this.state.schoolIs : this.state.schoolEn} />
-        <Jobs name = {this.state.lang === 'is' ? 'Vinna' : 'Work'}
-          info={this.state.lang === 'is' ? this.state.jobsIs : this.state.jobsEn}/>
         <Projects pros={this.state.lang === 'is' ? this.state.prosIS : this.state.prosEN}
             name={this.state.lang === 'is' ? 'Verkefni' : 'Projects'}/>
+        <Jobs name = {this.state.lang === 'is' ? 'Vinna' : 'Work'}
+          info={this.state.lang === 'is' ? this.state.jobsIs : this.state.jobsEn}/>
         <Endorsment name = {this.state.lang === 'is' ? 'Meðmælendur' : 'Referrals'}/>
         <Footer name={this.state.lang === 'is' ? 'Hafðu samband': 'Be in touch'}/>
       </main>
