@@ -1,0 +1,22 @@
+.Box{
+    box-shadow: 2px 2px 2px 2px  #888888;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.BoxHeaderArea{
+    display: flex;
+    justify-content: center;
+    background-color: #0080FF;
+    height: 80px;
+    padding: 0px !important;
+    margin: 0px !important;
+    
+}
+h3.BoxHeader {
+    height: 20px;
+    color: #ffffff;
+}
+

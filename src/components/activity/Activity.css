@@ -22,6 +22,7 @@ info{
     margin: auto;
 }
 hr.style3 {
+    margin-top:60px; 
     border-top: 1px dashed #8c8b8b;
 }
 

@@ -58,13 +58,7 @@
             transition: background-position 0s ease;
   }
   
-  .box:hover {
-    background-position: 0 0, 0 0;
-    
-    -webkit-transition-duration: 0.5s;
-       -moz-transition-duration: 0.5s;
-            transition-duration: 0.5s;
-  }
+  
   a.box {
     margin-left: 10px;
     margin-right: 10px;
@@ -86,8 +80,8 @@ a.box {
 }
 
 p.cardName {
-  background-color: #45daff;
-  color: #000000;
+  background-color: #0080FF;
+  color: #ffffff;
   border-color: #000000;
   height: 50px;
   margin: 0;

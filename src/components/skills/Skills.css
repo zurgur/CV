@@ -1,0 +1,9 @@
+.skills{
+    max-width: 1100px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    flex-flow: wrap;
+    align-items: flex-end;
+
+}
