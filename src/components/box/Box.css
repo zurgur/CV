@@ -9,14 +9,20 @@
 .BoxHeaderArea{
     display: flex;
     justify-content: center;
-    background-color: #0080FF;
+    background-color: black;
+    background-image: linear-gradient(to bottom, 
+    rgb(255, 0, 0)
+    , rgb(255, 153, 0));
+    background-attachment: fixed;
     height: 80px;
-    padding: 0px !important;
-    margin: 0px !important;
+   
     
 }
 h3.BoxHeader {
     height: 20px;
     color: #ffffff;
+}
+.BoxText{
+    margin: 10px;
 }
 
