@@ -5,33 +5,16 @@
 .Actnames{
     display: flex;
     flex-direction: row;
-    
     width: 100%;
+}
 
-}
-.date{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 50%;
-}
 info{
     display: flex;
 }
-.title{
-    margin: auto;
-    justify-content: center;
-    justify-self: center;
-}
+
 hr.style3 {
     margin-top:60px; 
     border-top: 1px dashed #8c8b8b;
-}
-
-div.Actnames p {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-bottom: auto !important;
 }
 
 div.titleAndInf {
@@ -39,16 +22,7 @@ div.titleAndInf {
     width: 50%;
 }
 
-div.titleAndInf {
-    width: 500px;
-}
 div.Actnames {
-    width: 1500px;
+    width: 100%;
     margin: auto;
 }
-
-div.titleAndInf {
-    width: 50%;
-}
-
-

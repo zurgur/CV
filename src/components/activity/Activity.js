@@ -17,10 +17,8 @@ export default class Activity extends Component{
                         <div className='Actnames'>
                         <div className='titleAndInf'>
                             <h2 className='title'>{thing.tittle}</h2>
+                            <p>{thing.date}</p>
                             <p className='info'>{thing.info}</p>
-                            </div>
-                            <div className='date'>
-                                <p>{thing.date}</p>
                             </div>
                         </div>
                     </div>
