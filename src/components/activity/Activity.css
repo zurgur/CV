@@ -20,6 +20,8 @@ info{
 }
 .title{
     margin: auto;
+    justify-content: center;
+    justify-self: center;
 }
 hr.style3 {
     margin-top:60px; 
@@ -34,5 +36,19 @@ div.Actnames p {
 
 div.titleAndInf {
     margin: auto !important;
+    width: 50%;
 }
+
+div.titleAndInf {
+    width: 500px;
+}
+div.Actnames {
+    width: 1500px;
+    margin: auto;
+}
+
+div.titleAndInf {
+    width: 50%;
+}
+
 
