@@ -9,6 +9,7 @@ import Projects from './components/progjects';
 import Endorsment from './components/endorsment';
 import Footer from './components/footer'
 import Skills from './components/skills';
+import InfoSwitcher from './components/infoSwitcher';
 
 class App extends Component {
 
@@ -105,7 +106,7 @@ class App extends Component {
         <Header switchLan={this.switchLang()} lan={this.state.lang}/>
         <School name={this.state.lang === 'is' ? 'Menntun' : 'Education'}
           info={this.state.lang === 'is' ? this.state.schoolIs : this.state.schoolEn} />
-        <Skills name={this.state.lang === 'is' ? 'Hæfn' : 'Skills'} ln={this.state.lang}/>
+        <Skills name={this.state.lang === 'is' ? 'Hæfni' : 'Skills'} ln={this.state.lang}/>
         <Projects pros={this.state.lang === 'is' ? this.state.prosIS : this.state.prosEN}
             name={this.state.lang === 'is' ? 'Verkefni' : 'Projects'}/>
         <Jobs name = {this.state.lang === 'is' ? 'Vinna' : 'Work'}

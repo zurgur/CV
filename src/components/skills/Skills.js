@@ -43,10 +43,10 @@ export default class Skills extends Component{
                 <div className='skills'>
             
                     { this.props.ln === 'is' ? skillsIS.map((i) => (
-                        <Box head={i.title} body={i.body} />
+                        <Box head={i.title} body={i.body} key={i.title}/>
                     )
                     ) : skillsEN.map((i) => (
-                        <Box head={i.title} body={i.body} />
+                        <Box head={i.title} body={i.body} key={i.title}/>
                     )
                     )}
                 </div>
