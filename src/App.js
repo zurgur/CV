@@ -20,6 +20,7 @@ class App extends Component {
     prosIS : [
       {tittle:'Laxness',
       git:'https://github.com/mimiqkz/Laxness',
+      playstore: 'https://play.google.com/store/apps/details?id=com.gljufrasteinn.ordskaldsins',
       img: ['laxness1.png','laxness2.png'],
       text: 'Vann að þessu verkefni í samstarfi við safnið Gljúfrastein. Það var mjög góð reynsla að vinna með viðskiptavini og koma hugmyndum okkar saman. Forritið er app sem upprunalega var gert í Android native, en seinna færðum við það í react native.'},
       {tittle: 'k-assistant',
@@ -36,7 +37,7 @@ class App extends Component {
       text: 'Verkefni í þróun hugbúnaðar. Forritið er gert með það í huga að geta pantað flug og séð upplýsingar um þau flug sem notandi hefur keypt sér. Gert í JavaFX með SQLite gagnagrunni. Ég vann í að leita að og panta flug.'},
       {tittle:'React CV',
       git:'https://github.com/zurgur/CV',
-      text: 'Verkefni sem ég kunnátu mína um Vefforritun sem ég hef öðlast í námi. Gert með ReactJS, Javascript, HTML5 og CSS3'},
+      text: 'Verkefni sem ég nýtti kunnátu mína um Vefforritun sem ég hef öðlast í námi. Gert með ReactJS, Javascript, HTML5 og CSS3'},
   ],
   prosEN :  [
     {tittle:'Laxness',
