@@ -70,20 +70,21 @@ class App extends Component {
             info: 'Computer science'},
   ],
   jobsIs : [
-    {tittle: "Dæmatíma kennari",
+    {tittle: "Forritari  hjá Annata",
+    date: '2018 - ',
+    info: 'Forritari í Dynamics 365 for finance and operations'},
+    {tittle: "Dæmatíma kennari við Háskóla Íslands",
     date: '2018',
     info: 'Kenndi stærðfræði og reiknifræði við Háskóla Íslands'},
-    {tittle: "Vélarmaður / Sumarstarfstaður",
-    date: '2011 - 2017',
-    info: 'Vann sem vélarmaður'}
   ],
-  jobsEn : [{tittle: "Assistant teacher",
-  date: '2018',
-  info: 'Assistant teacher in Mathematics and calculus'},
-  {tittle: "Machine operator",
-  date: '2011 - 2017',
-  info: 'During 3 months each summer'}
-],
+  jobsEn : [
+    {tittle: "Developer at Annata",
+    date: '2018 - ',
+    info: 'Developer in Dynamics 365 for finance and operations'},
+    {tittle: "Assistant teacher at University of Iceland",
+    date: '2018',
+    info: 'Assistant teacher in Mathematics and calculus'},
+  ],
   }
 
   switchLang = () => {
@@ -102,13 +103,13 @@ class App extends Component {
           <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
         </Helmet>
         <Header switchLan={this.switchLang()} lan={this.state.lang}/>
+        <Jobs name = {this.state.lang === 'is' ? 'Vinna' : 'Work'}
+          info={this.state.lang === 'is' ? this.state.jobsIs : this.state.jobsEn}/>
         <School name={this.state.lang === 'is' ? 'Menntun' : 'Education'}
           info={this.state.lang === 'is' ? this.state.schoolIs : this.state.schoolEn} />
         <Skills name={this.state.lang === 'is' ? 'Hæfni' : 'Skills'} ln={this.state.lang}/>
         <Projects pros={this.state.lang === 'is' ? this.state.prosIS : this.state.prosEN}
             name={this.state.lang === 'is' ? 'Verkefni' : 'Projects'}/>
-        <Jobs name = {this.state.lang === 'is' ? 'Vinna' : 'Work'}
-          info={this.state.lang === 'is' ? this.state.jobsIs : this.state.jobsEn}/>
         <Endorsment name = {this.state.lang === 'is' ? 'Meðmælendur' : 'Referrals'}/>
         <Footer name={this.state.lang === 'is' ? 'Hafðu samband': 'Be in touch'}/>
       </main>
