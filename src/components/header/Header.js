@@ -30,7 +30,7 @@ export default class Header extends Component {
                     <a href='https://github.com/zurgur' className='git' ><img src='GitHub-Mark-120px-plus.png' className='headImg' alt='github'/></a>
                     <a href='https://www.linkedin.com/in/alexander-sveinsson-a36715139/' className='ln' ><img src='In-2C-128px-TM.png' className='headImg' alt='linkedinn' /></a>
                 </div>
-                <a onClick={this.props.switchLan} ><img className='langButton' src={sorce} alt='select lang'/> </a>
+                <button onClick={this.props.switchLan} ><img className='langButton' src={sorce} alt='select lang'/> </button>
 
                 </div>
             </header>

@@ -9,7 +9,6 @@ import Projects from './components/progjects';
 import Endorsment from './components/endorsment';
 import Footer from './components/footer'
 import Skills from './components/skills';
-import InfoSwitcher from './components/infoSwitcher';
 
 class App extends Component {
 
