@@ -57,26 +57,25 @@
          -o-transition: background-position 0s ease;
             transition: background-position 0s ease;
   }
-  
-  
-  a.box {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 400px;
-}
-
 
 p.cardTittle {
   height: 50px;
 }
 
-a.box {
+.card-container {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 400px;
   background-color: #ffffff;
   color: #000000;
   text-decoration: none;
   box-shadow: 2px 2px 2px 1px #888888;
   line-height: 50px;
   margin-bottom: 10px;
+}
+
+.card-container:hover {
+  box-shadow: 4px 4px 4px 4px #888888;
 }
 
 p.cardName {
@@ -87,3 +86,6 @@ p.cardName {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}

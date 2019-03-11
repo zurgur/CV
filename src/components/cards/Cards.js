@@ -15,10 +15,12 @@ export default class Projects extends Component{
         return(
             <div className='Cards'>
             {info.map((i) => (
-                <a key={i.name} className='box' href={i.page}>
-                    <p className='cardName'>{i.name}</p>
-                    <p className='cardTittle'>{i.tittle}</p>
-                </a>
+                <div key={i.name} className='card-container'>
+                    <a href={i.page} className='box'>
+                        <p className='cardName'>{i.name}</p>
+                        <p className='cardTittle'>{i.tittle}</p>
+                    </a>
+                </div>
             ))}
             </div>
         );
