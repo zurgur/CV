@@ -20,6 +20,8 @@ export default class Projects extends Component{
                         <p className='cardName'>{i.name}</p>
                         <p className='cardTittle'>{i.tittle}</p>
                     </a>
+                    <hr className='style3'/>
+                    {i.docs ? <a href={i.docs}><img className='doc-image' alt='google docs icon'  src='Google-docs.svg' /> </a> : <p></p>}
                 </div>
             ))}
             </div>

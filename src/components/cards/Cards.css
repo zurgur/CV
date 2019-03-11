@@ -59,7 +59,7 @@
   }
 
 p.cardTittle {
-  height: 50px;
+  max-height: 10px;
 }
 
 .card-container {
