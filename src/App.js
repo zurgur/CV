@@ -19,7 +19,6 @@ class App extends Component {
     prosIS : [
       {tittle:'Laxness',
       git:'https://github.com/mimiqkz/Laxness',
-      playstore: 'https://play.google.com/store/apps/details?id=com.gljufrasteinn.ordskaldsins',
       img: ['laxness1.png','laxness2.png'],
       text: 'Vann að þessu verkefni í samstarfi við safnið Gljúfrastein. Það var mjög góð reynsla að vinna með viðskiptavini og koma hugmyndum okkar saman. Forritið er app sem upprunalega var gert í Android native, en seinna færðum við það í react native.'},
       {tittle: 'k-assistant',

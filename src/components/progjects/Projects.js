@@ -14,7 +14,6 @@ export default class Projects extends Component{
                 {pros.map((pro) =>(
                     <div key={pro.tittle} className='pro'>
                         <a href={pro.git} className='git' ><img src='GitHub-Mark-120px-plus.png' className='headImg' alt='github'/></a>
-                        {pro.playstore ? <a href={pro.playstore}><img className='playButton' src='google-play-badge.png' alt='play store'></img></a> : <p></p>}
                         <h3>{pro.tittle}</h3>
                         <div className='texti'><p>{pro.text}</p></div>
                         <div className='images'>
