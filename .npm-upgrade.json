@@ -1,0 +1,8 @@
+{
+  "ignore": {
+    "source-map-explorer": {
+      "versions": "2.1.1",
+      "reason": "not for now"
+    }
+  }
+}

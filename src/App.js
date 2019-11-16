@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import {Helmet} from "react-helmet";
 import './App.css';
 
@@ -10,13 +10,10 @@ import Endorsment from './components/endorsment';
 import Footer from './components/footer'
 import Skills from './components/skills';
 
-class App extends Component {
+const App = () => {
+  const [lang, setLang] = useState('en');
 
-  state = {
-
-    lang: 'is',
-
-    prosIS : [
+    const prosIS = [
       {tittle:'Laxness',
       git:'https://github.com/mimiqkz/Laxness',
       img: ['laxness1.png','laxness2.png'],
@@ -36,8 +33,8 @@ class App extends Component {
       {tittle:'React CV',
       git:'https://github.com/zurgur/CV',
       text: 'Verkefni sem ég nýtti kunnátu mína um Vefforritun sem ég hef öðlast í námi. Gert með ReactJS, Javascript, HTML5 og CSS3'},
-  ],
-  prosEN :  [
+  ];
+  const prosEN = [
     {tittle:'Laxness',
     git:'https://github.com/mimiqkz/Laxness',
     img: ['laxness1.png','laxness2.png'],
@@ -57,63 +54,50 @@ class App extends Component {
     {tittle:'React CV',
     git:'https://github.com/zurgur/CV',
     text: 'A project where I used my knowledge of Web-development that I have learnt in school. Made with ReactJS Javascript, HTML5 and CSS3'},
-  ],
-  schoolIs : [
-    {tittle: "Háskóli Íslands",
-            date: '2016 - 2018',
-            info: 'Tölvunarfræði'},
-  ],
-  schoolEn : [
-    {tittle: "University of Iceland",
-            date: '2016 - 2018',
-            info: 'Computer science'},
-  ],
-  jobsIs : [
+  ];
+  const schoolIs = [{tittle: "Háskóli Íslands", date: '2016 - 2018', info: 'Tölvunarfræði'}];
+  const schoolEn = [{tittle: "University of Iceland", date: '2016 - 2018', info: 'Computer science'}];
+  const jobsIs = [
     {tittle: "Forritari  hjá Annata",
     date: '2018 - ',
     info: 'Forritari í Dynamics 365 for finance and operations'},
     {tittle: "Dæmatíma kennari við Háskóla Íslands",
     date: '2018',
     info: 'Kenndi stærðfræði og reiknifræði við Háskóla Íslands'},
-  ],
-  jobsEn : [
+  ];
+
+  const jobsEn = [
     {tittle: "Developer at Annata",
     date: '2018 - ',
     info: 'Developer in Dynamics 365 for finance and operations'},
     {tittle: "Assistant teacher at University of Iceland",
     date: '2018',
     info: 'Assistant teacher in Mathematics and calculus'},
-  ],
-  }
+  ];
 
-  switchLang = () => {
-    return (e) => {
-      const newLang = this.state.lang === 'is' ? 'en' : 'is';
-      console.info(newLang);
-      this.setState({lang : newLang});
-    }
+  const switchLang = () => {
+    const newLang = lang === 'is' ? 'en' : 'is';
+    setLang(newLang);
   }
   
-  render() {
-    return (
-      <main className="App">
-        <Helmet>
-          <title>Alexander</title>
-          <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
-        </Helmet>
-        <Header switchLan={this.switchLang()} lan={this.state.lang}/>
-        <Jobs name = {this.state.lang === 'is' ? 'Vinna' : 'Work'}
-          info={this.state.lang === 'is' ? this.state.jobsIs : this.state.jobsEn}/>
-        <School name={this.state.lang === 'is' ? 'Menntun' : 'Education'}
-          info={this.state.lang === 'is' ? this.state.schoolIs : this.state.schoolEn} />
-        <Skills name={this.state.lang === 'is' ? 'Hæfni' : 'Skills'} ln={this.state.lang}/>
-        <Projects pros={this.state.lang === 'is' ? this.state.prosIS : this.state.prosEN}
-            name={this.state.lang === 'is' ? 'Verkefni' : 'Projects'}/>
-        <Endorsment name = {this.state.lang === 'is' ? 'Meðmælendur' : 'Referrals'}/>
-        <Footer name={this.state.lang === 'is' ? 'Hafðu samband': 'Be in touch'}/>
-      </main>
-    );
-  }
+  return (
+    <main className="App">
+      <Helmet>
+        <title>Alexander</title>
+        <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+      </Helmet>
+      <Header switchLan={switchLang} lan={lang}/>
+      <Jobs name = {lang === 'is' ? 'Vinna' : 'Work'}
+        info={lang === 'is' ? jobsIs : jobsEn}/>
+      <School name={lang === 'is' ? 'Menntun' : 'Education'}
+        info={lang === 'is' ? schoolIs : schoolEn} />
+      <Skills name={lang === 'is' ? 'Hæfni' : 'Skills'} ln={lang}/>
+      <Projects pros={lang === 'is' ? prosIS : prosEN}
+          name={lang === 'is' ? 'Verkefni' : 'Projects'}/>
+      <Endorsment name = {lang === 'is' ? 'Meðmælendur' : 'Referrals'}/>
+      <Footer name={lang === 'is' ? 'Hafðu samband': 'Be in touch'}/>
+    </main>
+  );
 }
 
 export default App;

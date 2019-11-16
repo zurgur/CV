@@ -1,8 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import './Header.css';
-
 
 export default (props) => {
   const sorce = props.lan !== 'is' ? 'ice.png' : 'united-kingdom.png'
