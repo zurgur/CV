@@ -81,7 +81,7 @@ const App = () => {
     {
       tittle: 'Forritari  hjá Annata',
       date: '2018 - ',
-      info: 'Forritari í Dynamics 365 for finance and operations',
+      info: 'Ég vinn sem hluti af nýsköpunarteymi Annata. Lausnirnar sem við vinnum með eru búnar til fyrir Microsoft Dynamics ásamt sérsniðnum veflausnum, þar i meðal React.',
     },
     {
       tittle: 'Dæmatíma kennari við Háskóla Íslands',
@@ -94,7 +94,7 @@ const App = () => {
     {
       tittle: 'Developer at Annata',
       date: '2018 - ',
-      info: 'Developer in Dynamics 365 for finance and operations',
+      info: 'I work as a part of an innovation team. The solutions we work with are all created for the Microsoft Dynamics platform along with custom web solutions, including React.',
     },
     {
       tittle: 'Assistant teacher at University of Iceland',
