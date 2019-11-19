@@ -1,6 +1,7 @@
 .App-header {
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     height: 500px;
     width: 100%;
     font-size: 30px;
