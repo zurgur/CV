@@ -30,6 +30,12 @@ h1{
     transform: scale(1.1);
 }
 
+@media only screen and (max-width: 600px) {
+    .image:hover{
+        transform: scale(1.0);
+    }
+  }
+
 img.headImg {
     margin-top: 8px;
 }
