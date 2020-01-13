@@ -6,9 +6,9 @@ import Header from './components/header';
 import Jobs from './components/jobs';
 import School from './components/schools';
 import Projects from './components/progjects';
-import Endorsment from './components/endorsment';
+// import Endorsment from './components/endorsment';
 import Footer from './components/footer';
-import Skills from './components/skills';
+// import Skills from './components/skills';
 
 const App = () => {
   const [lang, setLang] = useState('en');
@@ -110,6 +110,7 @@ const App = () => {
 
   return (
     <main className="App">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
       <Helmet>
         <title>Alexander</title>
         <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
@@ -123,12 +124,12 @@ const App = () => {
         name={lang === 'is' ? 'Menntun' : 'Education'}
         info={lang === 'is' ? schoolIs : schoolEn}
       />
-      <Skills name={lang === 'is' ? 'Hæfni' : 'Skills'} ln={lang} />
+      {/* <Skills name={lang === 'is' ? 'Hæfni' : 'Skills'} ln={lang} /> */}
       <Projects
         pros={lang === 'is' ? prosIS : prosEN}
         name={lang === 'is' ? 'Verkefni' : 'Projects'}
       />
-      <Endorsment name={lang === 'is' ? 'Meðmælendur' : 'Referrals'} />
+      {/* <Endorsment name={lang === 'is' ? 'Meðmælendur' : 'Referrals'} /> */}
       <Footer name={lang === 'is' ? 'Hafðu samband' : 'Be in touch'} />
     </main>
   );
