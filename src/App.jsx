@@ -6,7 +6,7 @@ import Header from './components/header';
 import Jobs from './components/jobs';
 import School from './components/schools';
 import Projects from './components/progjects';
-// import Endorsment from './components/endorsment';
+import Endorsment from './components/endorsment';
 import Footer from './components/footer';
 // import Skills from './components/skills';
 
@@ -129,7 +129,7 @@ const App = () => {
         pros={lang === 'is' ? prosIS : prosEN}
         name={lang === 'is' ? 'Verkefni' : 'Projects'}
       />
-      {/* <Endorsment name={lang === 'is' ? 'Meðmælendur' : 'Referrals'} /> */}
+      <Endorsment name={lang === 'is' ? 'Meðmælendur' : 'Referrals'} />
       <Footer name={lang === 'is' ? 'Hafðu samband' : 'Be in touch'} />
     </main>
   );
