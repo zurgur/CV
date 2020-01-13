@@ -1,4 +1,24 @@
 div.Footer {
     padding-bottom: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.email {
+    max-width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all .7s;
+}
+
+.email:hover {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
+
+.Footer-links {
+    display: flex;
+    align-items: center
+}
