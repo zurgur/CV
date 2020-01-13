@@ -55,12 +55,18 @@
 
 h1.App-title {
   margin: auto;
+  padding: 0px;
+  text-align: center;
 }
 
 div.infoAndLinks {
   margin: auto;
   display: flex;
   flex-direction: column-reverse;
+  background-color: rgba(192,192,192,0.75);
+  border-radius: 25px;
+  min-width: 250px;
+  text-align: center;
 }
 
 div.infoTex {
@@ -73,7 +79,7 @@ div.profileLinks {
 
 div.infoTex {
   height: auto;
-  color: #ffffff;
+  color: black;
 }
 
 img.headImg {

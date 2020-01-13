@@ -18,8 +18,9 @@ hr.style3 {
 }
 
 div.titleAndInf {
-    margin: auto !important;
-    width: 50%;
+    margin: auto;
+    width: calc(100% - 10px);
+    max-width: 800px;
 }
 
 div.Actnames {

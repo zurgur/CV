@@ -10,8 +10,6 @@ export default (props) => {
       <h1 className="App-title">Alexander Freyr Sveinsson</h1>
       <div className="infoAndLinks">
         <div className="infoTex">
-          <p className="infoP">Akkurgerði 44</p>
-          <p className="infoP">Reykjavík, 108 Rvk</p>
           <p className="infoP">(354) 869-2855</p>
           <p className="infoP">alexfreyrs@gmail.com</p>
         </div>

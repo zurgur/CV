@@ -34,10 +34,6 @@ h1{
     transition: transform .4s; /* Animation */
 }
 
-/* .image:hover{
-    transform: scale(1.1);
-} */
-
 @media only screen and (max-width: 600px) {
     .image:hover{
         transform: scale(1.0);
@@ -68,10 +64,10 @@ img.image {
     font-family: sans-serif;
   }
   
- .texti{
-     max-width: 800px;
-  
+ .texti {
+    max-width: 800px;
     margin: auto;
+    width: calc(100% - 10px);
  }
  
  img.headImg {
